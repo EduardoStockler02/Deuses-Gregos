@@ -1,6 +1,4 @@
 let index = 0;
-const slides = document.querySelectorAll('.carousel .item');
-const totalSlides = slides.length;
 
 function moveSlide(direction) {
     const slides = document.querySelectorAll('.carousel .item');
