@@ -1,7 +1,7 @@
 let index = 0;
 const slides = document.querySelectorAll('.carousel .item');
 const totalSlides = slides.length;
-
+const items = document.querySelectorAll('.carousel .item');
 
 function moveSlide(direction) {
     const slides = document.querySelectorAll('.carousel img');
@@ -21,4 +21,12 @@ document.addEventListener('keydown', (event)=>{
     else if(event.key === 'ArrowLeft') {
         moveSlide(-1);
     }
+});
+
+document.array.forEach(element => {
+    document.addEventListener("click", () => {
+        items.forEach((el) => classList.remove("active"));
+
+        items.classList.add("active");
+    })
 });
