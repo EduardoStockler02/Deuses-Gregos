@@ -3,7 +3,7 @@
     --color-primary-gold-hover: #CD7F32;
     --color-primary-red: #8B0000;
     --color-primary-blue: #6EC6E2;
-   
+
     --color-primary-black: #000000;
     --color-primary-white: #FFFFFF;
 
@@ -88,7 +88,7 @@ header h1 {
 .carousel-items {
     display: flex;
     align-items: center;
-    transition: transform 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     gap: 20px;
 }
 
@@ -97,6 +97,8 @@ header h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: -1;
+    transition: transform 0.3s ease-in-out;
 }
 
 .carousel img {
@@ -104,15 +106,14 @@ header h1 {
     width: 200px;
     height: 100%;
     border-radius: 10px;
-    transition: transform 0.5s ease-in-out;
     opacity: 0.7;
+    z-index: -1;
+    transition: transform 0.3s ease-in-out;
 }
 
-.carousel img.active {
-    max-height: max-content;
-    height: 100%;
-    width: 300px;
+.carousel .item.active {
     opacity: 1;
+    z-index: 1;
     transform: scale(1.5);
 }
 
@@ -122,11 +123,10 @@ h2 {
 }
 
 /* Botões de navegação */
-.prev, .next {
+.prev,
+.next {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    position: absolute;    
     border: none;
     background-color: transparent;
     color: var(--color-primary-white);
@@ -134,17 +134,20 @@ h2 {
     cursor: pointer;
     z-index: 10;
     font-size: 2rem;
+    width: 60px;
 }
 
+
 .prev {
-    left: -10px;
+    left: 10px;
 }
 
 .next {
-    right: -10px;
+    right: 10px;
 }
 
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
