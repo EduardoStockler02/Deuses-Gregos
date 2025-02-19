@@ -29,16 +29,36 @@
 
     <!-- Carousel -->
     <div class="carousel">
-        <div class="carousel-images">
-            <img src="/assets/afrodite.jpg" alt="afrodite">
-            <img src="/assets/hera.jpeg" alt="hera">
-            <img src="/assets/poseidon.jpg" alt="poseidon">
-            <img src="/assets/zeus.jpg" class="zeus">
-            <img src="/assets/hades.webp" alt="hades">
+        <div class="carousel-items">
+            <div class="item">
+                <img src="/assets/afrodite.jpg" alt="afrodite">
+                <h2>Afrodite</h2>
+                <p>Deusa do amor e da beleza</p>
+            </div>
+            <div class="item">
+                <img src="/assets/hera.jpeg" alt="hera">
+                <h2>Hera</h2>
+                <p>Deusa do casamento</p>
+            </div>
+            <div class="item">
+                <img src="/assets/poseidon.jpg" alt="poseidon">
+                <h2>Poseidon</h2>
+                <p>Deus do mar</p>
+            </div>
+            <div class="item">
+                <img src="/assets/zeus.jpg" class="zeus">
+                <h2>Zeus</h2>
+                <p>Deus do céu</p>
+            </div>
+            <div class="item">
+                <img src="/assets/hades.webp" alt="hades">
+                <h2>Hades</h2>
+                <p>Deus do submundo</p>
+            </div>
         </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
     </div>
-    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-    <button class="next" onclick="moveSlide(1)">&#10095;</button>
 
     <script src="main.js"></script>
 </body>
